@@ -1,0 +1,32 @@
+.main {
+    padding: 10px 10px;
+    margin: 0 10px;
+    border-radius: 2px;
+    border-color: #61dafb;
+    background-color: #61dafb;
+}
+
+.primary {
+    /*background-color: red;*/
+    /*color: aliceblue;*/
+    padding: 10px 10px;
+    margin: 0 10px;
+    border-radius: 2px;
+    border-color: #61dafb;
+    background-color: red;
+}
+
+.secondary {
+    /*background-color: blue;*/
+    /*color: aliceblue;*/
+    padding: 10px 10px;
+    margin: 0 10px;
+    border-radius: 2px;
+    border-color: #61dafb;
+    background-color: green;
+}
+
+.letters {
+    padding: 0.3rem;
+    background-color: rgb(60, 60, 250);
+}
