@@ -1,0 +1,28 @@
+.img {
+    width: 30px;
+}
+
+.Menu_button {
+    border: none;
+    background: none;
+    transition: 1s;
+    cursor: pointer;
+    /*margin: 5px 0 0 10px;*/
+}
+
+.elems {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    margin: 10% 0 0 20%;
+}
+
+
+.Menu_button:hover {
+    transform: scale(1.1);
+}
+
+.Menu_button:active {
+    transform: scale(0.9);
+}
+
