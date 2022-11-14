@@ -2,6 +2,7 @@ import style from './Button_menu.module.css';
 import {useState} from "react";
 // import название from ссылка на компонент
 import {Title} from '../Title/Title';
+
 export const Button_menu = (props) => {
 
     const [img, setImg] = useState(true);
