@@ -14,7 +14,6 @@ function App() {
         <Input label={'Name'} placeholder={'Name'} change={changeHandler}/>
         <Input label={'Email'} placeholder={'Email'} change={changeHandler}/>
       </div>
-
   );
 }
 

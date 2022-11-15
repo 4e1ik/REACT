@@ -1,5 +1,3 @@
-
-
 import {useState, useEffect} from "react";
 
 const myList = ['1', '2', '3', '4', '5'];
@@ -27,9 +25,6 @@ export const List = () => {
     }, [list]);
 
     const clickHandler = (el) => {
-        
-        
-        
             const li = el.target.innerText;
             const index = list.indexOf(li);
             const myArray = [...list];

@@ -20,10 +20,6 @@ export const Input = (props) => {
         setCount((prev) => ++prev)
     }
 
-
-
-
-
     return(
         <div className={styles.wrapper}>
             <label className={styles.lable} htmlFor={label}>{label}</label>

@@ -3,15 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Hw_1 from './Hw_1';
+import Hw_2 from './Hw_2';
 import List from "./components/List/List";
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-      <List />
+    {/*<App />*/}
+    {/*  <List />*/}
       {/*<Hw_1 />*/}
+      <Hw_2 />
   </React.StrictMode>
 );
 
