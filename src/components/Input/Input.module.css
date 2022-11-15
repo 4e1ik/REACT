@@ -1,0 +1,23 @@
+.input {
+    padding: 0.5rem;
+}
+
+.wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 1rem;
+}
+
+.hint {
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+.lable {
+    font-size: 18px;
+    color: #000000;
+}

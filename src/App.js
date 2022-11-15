@@ -1,14 +1,20 @@
 import './App.css';
 import {Button} from './components/Button/Button';
+import {Input} from "./components/Input/Input";
 
 
 function App() {
 
+    const changeHandler = (val) => {
+        console.log(val);
+    }
+
   return (
-    <div className="App">
-      <Button title={'Name Last'} type={'primary'} />
-      <Button title={'Artem Artemov'} type={'secondary'}/>
-    </div>
+      <div>
+        <Input label={'Name'} placeholder={'Name'} change={changeHandler}/>
+        <Input label={'Email'} placeholder={'Email'} change={changeHandler}/>
+      </div>
+
   );
 }
 
