@@ -9,13 +9,14 @@ export const Input = (props) => {
 
     const inputHandler = (el) => {
         setValue(el.target.value);
-        change(value);
+        change(el.target.value);
     }
 
     return (
         <div>
             <label className={styles.lable} htmlFor={label}>{label}</label>
             <input value={value} onChange={inputHandler} id={label} placeholder={placeholder} className={styles.input} type="text"/>
+            <p>Value: {value}</p>
         </div>
     );
 }
