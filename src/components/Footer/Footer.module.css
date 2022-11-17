@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    height: 80px;
+    background-color: #ecd7d7;
+    justify-content: center;
+}
+
+.black {
+    background-color: #534d4d;
+    color: white;
+}

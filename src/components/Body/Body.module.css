@@ -1,0 +1,13 @@
+.main {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+    flex-direction: column;
+}
+
+.black {
+    background-color: #5f5656;
+    color: #ecd7d7;
+}
