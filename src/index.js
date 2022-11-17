@@ -10,10 +10,10 @@ import List from "./components/List/List";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/*<App />*/}
+    <App />
     {/*  <List />*/}
       {/*<Hw_1 />*/}
-      <Hw_2 />
+      {/*<Hw_2 />*/}
   </React.StrictMode>
 );
 
