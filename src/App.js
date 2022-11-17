@@ -1,18 +1,18 @@
 import './App.css';
-import {Button} from './components/Button/Button';
-import {Input} from "./components/Input/Input";
-
+import {Header} from "./components/Header/Header";
+import {Body} from "./components/Body/Body";
+import {Footer} from "./components/Footer/Footer";
+import ThemeProvider from "./context/ThemeContext";
 
 function App() {
 
-    const changeHandler = (val) => {
-        console.log(val);
-    }
-
   return (
-      <div>
-        <Input label={'Name'} placeholder={'Name'} change={changeHandler}/>
-        <Input label={'Email'} placeholder={'Email'} change={changeHandler}/>
+      <div className={'App'}>
+          <ThemeProvider>
+              <Header />
+              <Body />
+              <Footer />
+          </ThemeProvider>
       </div>
   );
 }

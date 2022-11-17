@@ -6,6 +6,7 @@ export const Form = () => {
     const [input, setInput] = useState(true);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     const clickHandler = () => {
         console.log(name, email);
@@ -16,6 +17,10 @@ export const Form = () => {
     };
     const changeEmailHandler = (val) => {
         setEmail(val);
+    };
+
+    const changePasswordHandler = (val) => {
+        setPassword(val);
     };
 
     return (
@@ -32,10 +37,20 @@ export const Form = () => {
                         placeholder={'Your email'}
                         change={changeEmailHandler}
                     />
-                    <Input label={'Password'} placeholder={'Your password'} />
+                    <Input label={'Password'} placeholder={'Your password'}  change={changePasswordHandler}/>
+                    <Button_send type="submit" onClick={() => setInput(prev => !prev)} title={'Send'} />
                 </div>
             )}
-            <Button_send type="submit" onClick={() => setInput(prev => !prev)} title={'Send'} />
+            {
+                !input && (
+                    <div>
+                        <p>Name: {name}</p>
+                        <p>Email: {email}</p>
+                        <p>Password: {password}</p>
+                    </div>
+                )
+            }
+
         </div>
     );
 };
