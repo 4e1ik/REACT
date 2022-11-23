@@ -1,7 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
+// import "~bootstrap/scss/bootstrap";
+import './index.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+
+
 import Hw_1 from './Hw_1';
 import Hw_2 from './Hw_2';
 import List from "./components/List/List";
@@ -10,7 +17,9 @@ import List from "./components/List/List";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+          <App />
+      </BrowserRouter>
     {/*  <List />*/}
       {/*<Hw_1 />*/}
       {/*<Hw_2 />*/}
